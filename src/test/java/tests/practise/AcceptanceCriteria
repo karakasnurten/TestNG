@@ -1,0 +1,141 @@
+
+
+// https://app.getpostman.com/join-team?invite_code=4ef6dffd0c3588376206c27f8bb59832
+
+// https://api.nasa.gov/planetary/apod?api_key=PPCkwayOnYewtTTxfySc833fby04K54zRxwyHE7H
+
+// PPCkwayOnYewtTTxfySc833fby04K54zRxwyHE7H
+
+  // 79ad5b7ec5641fee076842b98771e07e  Trello api key
+  // 8e2e4c47d1ea17bc9293b94f572b401eddecd82272be43a634b18f147a8981e8 secret
+  // ATTA61eb68667aa73a29f838c1e4ecffd15d9d9112efe6e2c2fb917427d22bef89a7A3921339
+
+
+
+logoQuality = "//img[@src='https://qa.qualitydemy.com/uploads/system/2b84adb4dd0ceaa6f250417bffeb45af.png']"
+homePageLearnOnYour ="//h2[@class='fw-bold']"
+categories="//li[@class='has-children text-nowrap fw-bold']"
+
+
+     US_001 Home Page
+     P= 1
+    // Bir kullanıcı olarak ana sayfaya erişebilmeliyim
+
+    Kullanıcı, "https://qa.qualitydemy.com" bağlantısı ile
+    siteye giriş yaptığında ana sayfanın açıldığını doğrulamalıdır.
+
+    US_011 my_wishlist
+     P= 3
+    welcomeNur = "//div[@class='toast-message']"
+    categoriesDropdown = "//span[text()='Categories']"
+    music = "(//a[@href='javascript:;'])[4]"
+    piano = "//a[text()='Piano']"
+    pianoTitle = "(//a[@class='course-title'])[3]"
+    addtoWishlistButton = "(//button[@id='98'])[1]"
+    addedtoWishlistButton = "//button[text()='Added to wishlist']"
+    wishlist page url = "https://qa.qualitydemy.com/home/my_wishlist"
+    wishlistIcon = "(//div[@class='icon'])[3]"
+    go to wishlist ="(//a[@href='https://qa.qualitydemy.com/home/my_wishlist'])[1]"
+    gotoWishlistButton = "//a[text()='Go to wishlist']"
+    actions ile drop down
+    Web Design for PHP  = (//button[@class='btn-compare-sm float-end']/font/font[.='Karşılaştırmak'])[1]
+    Select a course = "//span[@id='select2--en-container']" ile assort et
+    search box ="//form[@action='https://qa.qualitydemy.com/home/search']//i"
+    search box write = "//input[@name='query']"
+    categories title = "//h5[@class='fw-700 mb-4']"
+    Web Design for PHP yazisina tikla = "//h5/font/font[.='PHP için Web Tasarımı']"
+    Web Design for PHP sayfasinin basligi = "//h1/font/font[.='PHP için Web Tasarımı']"
+    Web Design for PHP sayfasi Url = "https://qa.qualitydemy.com/home/course/web-design-for-php/1"
+    Instructor image = "//img[@class='radius-10']"
+    ınstuctor about me = "//h4[@class='fw-700']"
+    lesson Url = "https://qa.qualitydemy.com/home/course/web-design-for-php/1"
+    lesson count = "//span[@class='total-lectures']"
+    lessonTotalTime = " (//span[@class='total-time'])[1]"
+
+    lessons ="//span[@class='total-lectures']" bass guitar lesson
+    addedToWishlistBassGuitar = "//button[@class='btn btn-add-wishlist active']"
+    addedToWishlistPiano = "//button[@class='btn btn-add-wishlist active']"
+    buttonAddToWishEnglishMas= "//button[text()='Add to wishlist']"
+    wishlist="(//i[@class='far fa-heart'])[1]"
+
+    courseCompareSayfa = "//ol[@class='breadcrumb']"
+    courseTitlePiano="//a[@class='course-title']
+    coursePianoSayfaTitle ="//div[@class='course-header-wrap']"
+    instructorAbout ="//div[@class='col-lg-7 col-xl-6 order-last order-lg-first text-md-start text-center pt-4 ps-0']"
+
+
+         // Bir kullanıcı olarak my_wishlist sayfasının fonksiyonlarını kullanabilmeliyim.
+
+         1- Karşılaştır bağlantısı tıklandığında, Kurs karşılaştırma sayfasına yönlendirilmelidir.
+         2- Kurs, arama kutusundan aranabilir olmalıdır
+         3- Ders adına tıklandığında ilgili dersin sayfasına yönlendirilmelidir.
+         4- Eğitmen ikonuna tıklandığında ilgili eğitmen sayfasına yönlendirilmelidir.
+         5- Ders ismine tıklandığımda ilgili sayfada ders sayısı ve süresi doğrulanabilmelidir.
+
+       US_022  course_form/course_edit basic
+       P= 5
+       titleDashboard ="//h4[@class='page-title']"
+       linkCourseManager = "(//a[@class='side-nav-link '])[1]"
+       buttonActions = "(//button[@type='button'])[1]"
+       linkEditThisCourse ="//a[text()='Edit this course']"
+       buttonBasic ="//span[text()='Basic']"
+       addNewInstructor1 = "//label[text()='Add new instructor']"
+       addNewInstructor2 = "(//span[@class='select2-selection__rendered'])[1]"
+
+       instructor button = "//a[@href='https://qa.qualitydemy.com/user']"
+       add new course button = "//a[@href='https://qa.qualitydemy.com/user/course_form/add_course']"
+       select a category = "//span[@id='select2-sub_category_id-container']"
+       select a category piano = "//span[@id='select2-sub_category_id-container']"
+       select a category bassguitar ="//span[@id='select2-sub_category_id-container']"
+
+
+       // bir kullanıcı olarak "course_form/course_edit" bölümleme işlevlerini kullanabilmeliyim
+
+       1- Yeni eğitmen ekle bölümüne tıklandığında buraya eklenen eğitmenler arasından seçim yapılabilmelidir.
+       2- Ders başlığı, Kısa açıklama ve açıklama üzerinde değişiklik yapılabilmelidir.
+       3- Kategori bölümünden istenilen kategori seçilebilmelidir.
+       4- Level kısmından istenilen level seçilebilmelidir.
+       5- Damla içeriğini etkinleştir düğmesi değiştirilebilir
+       6- Bu kursun en iyi kurs olup olmadığını kontrol edin onay kutusu seçilebilir olmalıdır
+
+       US_032 course_form/add_course pricing
+       P= 3
+       // Course_form/add_course fiyatlandırma bölümünün işlevleri düzgün çalışmalıdır
+
+       1- Bunun ücretsiz bir kurs olup olmadığını kontrol edin onay kutusu seçilebilir olmalıdır
+       2- Kurs fiyatı metin kutusuna istenilen fiyat rakam olarak girilmelidir.
+       3- Bu kursta indirim olup olmadığını kontrol et onay kutusu seçilebilir olmalıdır
+       4- İstenilen indirim İndirimli fiyat metin kutusuna sayı olarak girilmelidir.
+
+
+         <dependencies>
+           <!-- https://mvnrepository.com/artifact/junit/junit -->
+           <dependency>
+             <groupId>junit</groupId>
+             <artifactId>junit</artifactId>
+             <version>4.12</version>
+             <scope>test</scope>
+           </dependency>
+
+           <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+           <dependency>
+             <groupId>io.rest-assured</groupId>
+             <artifactId>rest-assured</artifactId>
+             <version>4.4.0</version>
+             <scope>test</scope>
+           </dependency>
+
+           <!-- https://mvnrepository.com/artifact/org.json/json -->
+           <dependency>
+             <groupId>org.json</groupId>
+             <artifactId>json</artifactId>
+             <version>20160810</version>
+           </dependency>
+         </dependencies>
+
+
+
+
+
+
+

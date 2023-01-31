@@ -1,0 +1,13 @@
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Classlari calistirma">
+    
+    <test name="Istenen classlari calistirma">
+        <classes>
+            <class name="tests.day15_SortAssert.C01_SoftAssert"></class>
+            <class name="tests.day16_SmokeTests.C03_SwitchingWindows"></class>
+            <class name="tests.day14_testNGFramework.C03_Nutella"></class>
+        </classes>
+    </test>
+</suite>
